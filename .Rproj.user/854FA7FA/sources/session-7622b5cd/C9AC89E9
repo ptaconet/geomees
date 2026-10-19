@@ -1,0 +1,26 @@
+{
+    "id": "C9AC89E9",
+    "path": "~/geomees/credentials_geomees.R",
+    "project_path": "credentials_geomees.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1792410860159.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "21,26",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1792410892,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1792410892420,
+    "read_only": false,
+    "read_only_alternatives": []
+}
