@@ -1,4 +1,8 @@
-.Rproj.user
+credentials_geomees.R
+geomees.Rproj
+.Renviron
 .Rhistory
 .RData
-.Ruserdata
+.Rproj.user/
+publication_ressources_omees/geoflow_config_files/
+publication_ressources_omees/geoflow_logs/
