@@ -8,9 +8,9 @@ library(ows4R)
 library(readxl)
 
 
-catalogues <- read_xlsx("geomees/integration_donnees_omees/geoflow_entities/entities_metadata_only.xlsx")
-identifiers_to_harvest <- read.csv("geomees/moissonnage_catalogues_exterieurs/catalogues_exterieurs_fiches_a_moissonner.csv")
-contacts <- read_xlsx("geomees/integration_donnees_omees/geoflow_entities/contacts.xlsx")  # if no contact is associated with the metadata sheet, we put that one
+catalogues <- read_xlsx("publication_ressources_omees/geoflow_entities/entities_metadata_only.xlsx")
+identifiers_to_harvest <- read.csv("moissonnage_ressources_externes/catalogues_exterieurs_fiches_a_moissonner.csv")
+contacts <- read_xlsx("publication_ressources_omees/geoflow_entities/contacts.xlsx")  # if no contact is associated with the metadata sheet, we put that one
 
 geomees_prod_or_bacasable <- "prod"  # "prod" ou "bacasable"
 
@@ -18,7 +18,7 @@ geomees_prod_or_bacasable <- "prod"  # "prod" ou "bacasable"
 # connexion à l'IDG
 ######################
 
-source("geomees/credentials_geomees.R")
+source("credentials_geomees.R")
 
 GN <- GNManager$new(
   url = eval(parse(text = paste0("geomees_gn_",geomees_prod_or_bacasable,"_url"))),
@@ -79,25 +79,27 @@ for(id in 1:nrow(identifiers_to_harvest)){
 
   if(identifiers_to_harvest$catalogue_metadata_standard[id] == "dkan"){
 
-    source("geomees/moissonnage_catalogues_exterieurs/catalogues_exterieurs_fonctions_moissonnage/fonctions_moissonnage_dkan.R")
+    source("moissonnage_ressources_externes/catalogues_exterieurs_fonctions_moissonnage/fonctions_moissonnage_dkan.R")
 
     meta_dkan <- dkan_get_meta(identifiers_to_harvest$data_identifier[id])
     shp_params <- dkan_get_shp(meta_dkan)
     if(!is.null(shp_params)){
       dkan_create_featuretype(meta_dkan,
                              shp_params,
-                             url_gn = eval(parse(text = paste0("geomees_gn_",geomees_prod_or_bacasable,"_url"))))
+                             url_gn = eval(parse(text = paste0("geomees_gn_",geomees_prod_or_bacasable,"_url")))
+                             )
     }
     md <- dkan_create_iso19115(meta_dkan,
                                 shp_params,
-                               catalogue_url = get_api_url(identifiers_to_harvest$Relation[id])
+                               catalogue_url = get_api_url(identifiers_to_harvest$Relation[id]),
+                               url_gs = eval(parse(text = paste0("geomees_gs_",geomees_prod_or_bacasable,"_url")))
                                )
   }
 
 
   if(identifiers_to_harvest$catalogue_metadata_standard[id] == "dataverse"){
 
-    source("geomees/moissonnage_catalogues_exterieurs/catalogues_exterieurs_fonctions_moissonnage/fonctions_moissonnage_dataverse.R")
+    source("moissonnage_ressources_externes/catalogues_exterieurs_fonctions_moissonnage/fonctions_moissonnage_dataverse.R")
 
     md <- dataverse_create_iso19115(
       identifier =  identifiers_to_harvest$data_identifier[id] ,
@@ -108,7 +110,7 @@ for(id in 1:nrow(identifiers_to_harvest)){
 
   if(identifiers_to_harvest$catalogue_metadata_standard[id] %in% c("geonetwork_api","geonetwork_csw_19115_3","opendatasoft")){
 
-    source("geomees/moissonnage_catalogues_exterieurs/catalogues_exterieurs_fonctions_moissonnage/fonctions_moissonnage_geonetwork.R")
+    source("moissonnage_ressources_externes/catalogues_exterieurs_fonctions_moissonnage/fonctions_moissonnage_geonetwork.R")
 
     md <- geonetwork_create_iso19115(
       identifier =  identifiers_to_harvest$data_identifier[id],
@@ -119,7 +121,7 @@ for(id in 1:nrow(identifiers_to_harvest)){
 
   if(identifiers_to_harvest$catalogue_metadata_standard[id] == "ddi"){
 
-    source("geomees/moissonnage_catalogues_exterieurs/catalogues_exterieurs_fonctions_moissonnage/fonctions_moissonnage_ddi.R")
+    source("moissonnage_ressources_externes/catalogues_exterieurs_fonctions_moissonnage/fonctions_moissonnage_ddi.R")
 
     md <- ddi_create_iso19115(
       identifier =  identifiers_to_harvest$data_identifier[id] ,

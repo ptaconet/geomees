@@ -4,11 +4,11 @@
   "metadata": {
     "entities": {
       "handler": "excel",
-      "source": "/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow/geoflow_entities/entities_metadata_only.xlsx"
+      "source": "/home/ptaconet/geomees/publication_ressources_omees/geoflow_entities/entities_metadata_only.xlsx"
     },
     "contacts": {
       "handler": "excel",
-      "source": "/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow/geoflow_entities/contacts.xlsx"
+      "source": "/home/ptaconet/geomees/publication_ressources_omees/geoflow_entities/contacts.xlsx"
     }
   },
   "software": [

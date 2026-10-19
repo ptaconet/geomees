@@ -2,7 +2,7 @@ library(geoflow)
 library(jsonlite)
 
 
-source("geomees/credentials_geomees.R")
+source("credentials_geomees.R")
 
 geomees_prod_or_bacasable <- "prod"  # "prod" ou "bacasable"
 
@@ -34,12 +34,12 @@ update_geoflow_config <- function(
 
 
 config_file <- update_geoflow_config(
-  config_file = "geomees/integration_donnees_omees/geoflow/geoflow_config_files/config_geomees_metadata_only.json",
+  config_file = "publication_ressources_omees/geoflow_config_files/config_geomees_metadata_only.json",
   gn_url = eval(parse(text = paste0("geomees_gn_",geomees_prod_or_bacasable,"_url"))),
   gn_gs_user = eval(parse(text = paste0("geomees_gn_gs_",geomees_prod_or_bacasable,"_user"))),
   gn_gs_pwd = eval(parse(text = paste0("geomees_gn_gs_",geomees_prod_or_bacasable,"_pwd")))
 )
 
 
-config <- initWorkflow("/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow/geoflow_config_files/config_geomees_metadata_only.json", dir = "/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow/geoflow_logs")
-executeWorkflow("/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow/geoflow_config_files/config_geomees_metadata_only.json", dir = "/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow/geoflow_logs")
+config <- initWorkflow("/home/ptaconet/geomees/publication_ressources_omees/geoflow_config_files/config_geomees_metadata_only.json", dir = "/home/ptaconet/geomees/publication_ressources_omees/geoflow_logs")
+executeWorkflow("/home/ptaconet/geomees/publication_ressources_omees/geoflow_config_files/config_geomees_metadata_only.json", dir = "/home/ptaconet/geomees/publication_ressources_omees/geoflow_logs")

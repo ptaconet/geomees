@@ -5,14 +5,14 @@ library(sf)
 library(DBI)
 library(tidyverse)
 
-df_projets <- read_xlsx("geomees/integration_donnees_omees/donnees_omees/atlas_ecosante/projets/data.xlsx")
+df_projets <- read_xlsx("ressources_omees/atlas_ecosante/projets/data.xlsx")
 
-thematiques <- read_xlsx("geomees/integration_donnees_omees/donnees_omees/atlas_ecosante/projets/thematiques_omees.xlsx")
+thematiques <- read_xlsx("ressources_omees/atlas_ecosante/projets/thematiques_omees.xlsx")
 
 
 ## connect to OMEES DB
 
-source("geomees/credentials_geomees.R")
+source("credentials_geomees.R")
 
 con <- DBI::dbConnect(
   RPostgres::Postgres(),
@@ -116,7 +116,7 @@ df_projets <- df_projets %>%
 
 
 ## connect geometry
-sites <- read.csv("geomees/integration_donnees_omees/donnees_omees/atlas_ecosante/projets/sites_geo_wkt.csv", sep = ";")
+sites <- read.csv("ressources_omees/atlas_ecosante/projets/sites_geo_wkt.csv", sep = ";")
 
 sites <- sites %>%
   separate_rows(projet_acronyme, sep = "\\|") %>%
@@ -249,7 +249,7 @@ st_write(df_projets, dsn = con, layer = "projets_omees",append = FALSE)
 
 library(readxl)
 
-fichiers <- list.files("geomees/integration_donnees_omees/donnees_omees/atlas_ecosante/acteurs/RNSR", full.names = T, pattern = "RNSR")
+fichiers <- list.files("ressources_omees/atlas_ecosante/acteurs/RNSR", full.names = T, pattern = "RNSR")
 df_projets <- purrr::map_dfr(fichiers, ~read_xlsx(.))
 colnames(df_projets) <- c("type_structure","numero_national","libelle_structure","sigle_structure", "annee_fermeture","lien_etablissement","adresse","mail","domaines_scientifiques","discipline","responsable")
 
@@ -261,7 +261,7 @@ df_projets <- df_projets %>%
   mutate(adresse_geocodage = str_extract(adresse, "(?i)(rue|place|chemin|avenue|boulevard|route|baillarguet|bd|av)\\s+.*"))
 
 
-df_acteurs <- read.csv("geomees/integration_donnees_omees/donnees_omees/atlas_ecosante/acteurs/acteurs_avec_adresse_propre.csv", sep =",")
+df_acteurs <- read.csv("donnees_omees/atlas_ecosante/acteurs/acteurs_avec_adresse_propre.csv", sep =",")
 
 for(i in 1:nrow(df_acteurs)){
 
@@ -293,12 +293,12 @@ df_acteurs <- df_acteurs %>%
   mutate(longitude = ifelse(sigle_structure %in% c("CBGP","ASTRE","PHIM"), 770714 , longitude)) %>%
   mutate(site_web = "www.mivegec.fr")  # a corriger
 
-write.csv(df_acteurs,"geomees/integration_donnees_omees/donnees_omees/atlas_ecosante/acteurs/acteurs_post_geocodage.csv", row.names = F, sep = ";")
+write.csv(df_acteurs,"ressources_omees/atlas_ecosante/acteurs/acteurs_post_geocodage.csv", row.names = F, sep = ";")
 
 
 
 
-df_acteurs = read.csv("geomees/integration_donnees_omees/donnees_omees/atlas_ecosante/acteurs/acteurs_post_geocodage.csv")
+df_acteurs = read.csv("ressources_omees/atlas_ecosante/acteurs/acteurs_post_geocodage.csv")
 
 df_acteurs <- df_acteurs %>%
   mutate(type_acteur = "Recherche") %>%

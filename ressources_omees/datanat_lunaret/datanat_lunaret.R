@@ -4,9 +4,9 @@ library(readxl)
 library(janitor)
 
 # Lire les 3 shapefiles
-points <- st_read("geomees/integration_donnees_omees/donnees_omees/datanat_lunaret/Point SfN.shp")
-lignes <- st_read("geomees/integration_donnees_omees/donnees_omees/datanat_lunaret/Linéaire SfN.shp")
-polygones <- st_read("geomees/integration_donnees_omees/donnees_omees/datanat_lunaret/Surface SfN.shp")
+points <- st_read("ressources_omees/datanat_lunaret/Point SfN.shp")
+lignes <- st_read("ressources_omees/datanat_lunaret/Linéaire SfN.shp")
+polygones <- st_read("ressources_omees/datanat_lunaret/Surface SfN.shp")
 
 polygones <- polygones %>% dplyr::filter(ID != "S1.1")
 
@@ -65,7 +65,7 @@ datanat_lunaret <- datanat_lunaret %>%
 
 
   # joindre la table attributaire complete
-  table_attributaire <- read_xlsx("geomees/integration_donnees_omees/donnees_omees/datanat_lunaret/Grille SfN.xlsx") %>%
+  table_attributaire <- read_xlsx("ressources_omees/datanat_lunaret/Grille SfN.xlsx") %>%
     rename(ID = Identifiant)
 
   table_attributaire <- janitor::clean_names(table_attributaire)
@@ -76,7 +76,7 @@ datanat_lunaret <- datanat_lunaret %>%
 
 ## push in DB
 
-source("geomees/credentials_geomees.R")
+source("credentials_geomees.R")
 
 con <- DBI::dbConnect(
   RPostgres::Postgres(),

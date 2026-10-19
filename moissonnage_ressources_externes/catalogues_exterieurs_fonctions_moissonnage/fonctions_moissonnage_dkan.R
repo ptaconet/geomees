@@ -25,15 +25,15 @@ dkan_get_shp <- function(meta_dkan){
 
   for(i in 1:length(meta_dkan$result$resources)){
     if(meta_dkan$result$resources[[i]]$mimetype == "application/zip"){
-      download.file(url = meta_dkan$result$resources[[i]]$url , destfile = paste0("geomees/moissonnage_catalogues_exterieurs/data/",meta_dkan$result$resources[[i]]$name))
+      download.file(url = meta_dkan$result$resources[[i]]$url , destfile = paste0("moissonnage_ressources_externes/data/",meta_dkan$result$resources[[i]]$name))
   #     break()
   #   }
   # }
 
   # Reading shapefiles (or other data sources) directly from zip files can be done by prepending the path with /vsizip/
-  shp <- read_sf(paste0("/vsizip/geomees/moissonnage_catalogues_exterieurs/data/",meta_dkan$result$resources[[i]]$name))
+  shp <- read_sf(paste0("/vsizip/moissonnage_ressources_externes/data/",meta_dkan$result$resources[[i]]$name))
 
-  shp_layer_name <- st_layers(paste0("/vsizip/geomees/moissonnage_catalogues_exterieurs/data/",meta_dkan$result$resources[[i]]$name))$name
+  shp_layer_name <- st_layers(paste0("/vsizip/moissonnage_ressources_externes/data/",meta_dkan$result$resources[[i]]$name))$name
   crs = st_crs(shp)$epsg
   if(is.na(crs)){
     crs <- 2154
@@ -63,7 +63,7 @@ dkan_create_featuretype <- function(meta_dkan, shp_params, url_gn){
   uploaded <- GSman$uploadShapefile(
     ws = "omees", ds = "couches_omees",
     endpoint = "file", configure = "first", update = "overwrite",
-    charset = "UTF-8", filename = paste0("geomees/moissonnage_catalogues_exterieurs/data/",shp_params$shp_path)
+    charset = "UTF-8", filename = paste0("moissonnage_ressources_externes/data/",shp_params$shp_path)
   )
 
   # check if the featureType exists
@@ -109,7 +109,7 @@ dkan_create_featuretype <- function(meta_dkan, shp_params, url_gn){
 }
 
 
-dkan_create_iso19115 <- function(meta_dkan, shp_params, catalogue_url){
+dkan_create_iso19115 <- function(meta_dkan, shp_params, catalogue_url, url_gs){
 
   md = ISOMetadata$new()
   md$setFileIdentifier(meta_dkan$result$name) # alternative : meta_dkan$result$id
@@ -300,7 +300,7 @@ dkan_create_iso19115 <- function(meta_dkan, shp_params, catalogue_url){
 
   # add wms
   or <- ISOOnlineResource$new()
-  or$setLinkage("https://geodata.bac-a-sable.inrae.fr/geoserver//omees/ows?service=WMS")
+  or$setLinkage(paste0(url_gs,"//omees/ows?service=WMS"))
   or$setName(shp_params$shp_layer_name)
   or$setDescription(paste0(shp_params$shp_layer_name,"- OGC Web Map Service"))
   or$setProtocol("OGC:WMS")
@@ -308,7 +308,7 @@ dkan_create_iso19115 <- function(meta_dkan, shp_params, catalogue_url){
 
   # add wfs
   or <- ISOOnlineResource$new()
-  or$setLinkage("https://geodata.bac-a-sable.inrae.fr/geoserver//omees/ows?service=WFS")
+  or$setLinkage(paste0(url_gs,"//omees/ows?service=WFS"))
   or$setName(shp_params$shp_layer_name)
   or$setDescription(paste0(shp_params$shp_layer_name,"- OGC Web Feature Service"))
   or$setProtocol("OGC:WFS")
