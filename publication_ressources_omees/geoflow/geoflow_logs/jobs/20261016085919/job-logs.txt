@@ -1,0 +1,2134 @@
+Session info
+====================================================================================================
+R version 4.6.1 (2026-06-24)
+Platform: x86_64-pc-linux-gnu
+Running under: Ubuntu 24.04.4 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.0 
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.0  LAPACK version 3.12.0
+
+locale:
+ [1] LC_CTYPE=fr_FR.UTF-8       LC_NUMERIC=C               LC_TIME=fr_FR.UTF-8       
+ [4] LC_COLLATE=fr_FR.UTF-8     LC_MONETARY=fr_FR.UTF-8    LC_MESSAGES=fr_FR.UTF-8   
+ [7] LC_PAPER=fr_FR.UTF-8       LC_NAME=C                  LC_ADDRESS=C              
+[10] LC_TELEPHONE=C             LC_MEASUREMENT=fr_FR.UTF-8 LC_IDENTIFICATION=C       
+
+time zone: Europe/Paris
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] ows4R_0.5      geonapi_0.8-1  keyring_1.4.1  geometa_0.10.1 jsonlite_2.0.0 geoflow_1.4.0 
+
+loaded via a namespace (and not attached):
+ [1] benchmarkmeData_2.0.0 xfun_0.61             dotenv_1.0.3          rdflib_0.2.9         
+ [5] gargle_1.6.1          lattice_0.23-1        tzdb_0.5.0            vctrs_0.7.3          
+ [9] tools_4.6.1           generics_0.1.4        curl_8.0.0            parallel_4.6.1       
+[13] tibble_3.3.1          proxy_0.4-29          pkgconfig_2.0.3       Matrix_1.7-6         
+[17] KernSmooth_2.23-27    readxl_1.5.0          redland_1.0.17-19     assertthat_0.2.1     
+[21] uuid_1.2-2            lifecycle_1.0.5       stringr_1.6.0         compiler_4.6.1       
+[25] terra_1.9-50          codetools_0.2-20      class_7.3-24          yaml_2.3.12          
+[29] whisker_0.4.1         pillar_1.11.1         crayon_1.5.3          tidyr_1.3.2          
+[33] sfarrow_0.4.1         openssl_2.4.2         classInt_0.4-11       iterators_1.0.14     
+[37] foreach_1.5.2         mime_0.13             zip_3.0.2             tidyselect_1.2.1     
+[41] digest_0.6.39         stringi_1.8.9         geonode4R_0.1-2       sf_1.1-3             
+[45] dplyr_1.2.1           purrr_1.2.2           arrow_25.0.1          grid_4.6.1           
+[49] cli_3.6.6             geosapi_0.8-1         magrittr_2.0.5        XML_3.99-0.24        
+[53] e1071_1.7-17          withr_3.0.3           readr_2.2.0           bit64_4.8.6          
+[57] googledrive_2.1.2     roxygen2_8.1.0        httr_1.4.9            bit_4.6.0            
+[61] otel_0.2.0            benchmarkme_1.0.8     cellranger_1.1.0      png_0.1-9            
+[65] askpass_1.2.1         hms_1.1.4             evaluate_1.0.5        knitr_1.52           
+[69] doParallel_1.0.17     rlang_1.3.0           Rcpp_1.1.2            glue_1.8.1           
+[73] DBI_1.3.0             xml2_1.6.0            vroom_1.7.1           rstudioapi_0.19.0    
+[77] R6_2.6.1              plyr_1.8.9            fs_2.1.0              units_1.0-1          
+* RAM: 66.8 GB
+* CPU: 22 cores
+====================================================================================================
+Workflow initialization
+====================================================================================================
+[geoflow][INFO] Init Workflow configuration 
+[geoflow][INFO] Workflow job directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919 
+[geoflow][INFO] Creating workflow profile... 
+[geoflow][INFO] Workflow ID: my-workflow-identifier 
+[geoflow][INFO] Workflow name: My workflow 
+[geoflow][INFO] Workflow project: Test geoflow omees not spatial data 
+[geoflow][INFO] Workflow organization: Observatoire Montpellierain en Ecologie et Evolution de la Santé 
+[geoflow][INFO] Setting geoflow global options... 
+[geoflow][INFO] Setting option 'line_separator' to '_
+' 
+[geoflow][INFO] Configuring output software 'omees-geonetwork' (geonetwork) 
+[geoflow][INFO] Check package dependencies for software 'omees-geonetwork' (geonetwork) 
+[geoflow][INFO] The following packages have been imported for software 'omees-geonetwork' (geonetwork): 
+  package installed version
+1 geonapi      TRUE   0.8.1
+[geonapi][INFO] Connecting to GeoNetwork services as authenticated user 'omees' 
+[geonapi][INFO] Successfully authenticated to GeoNetwork!
+ 
+[geonapi][INFO] GN version >= 3.2 - Set-up GeoNetwork Open API manager 
+[geoflow][INFO] Loading metadata elements... 
+[geoflow][INFO] Loading metadata contacts... 
+[geoflow][INFO] Loading metadata contacts from '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_entities/contacts.xlsx' [with 'excel' handler]... 
+[geoflow][INFO] Try to use embedded contacts handler 
+[geoflow][INFO] Execute contact handler to load contacts... 
+-/                                                                                                          /                                                                                                          -                                                                                                          [geoflow][INFO] Validating contacts 
+[geoflow][INFO] No validation issue detected! 
+[geoflow][INFO] Parsing 21 contacts from tabular source 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][WARN] Use 'Identifier' column as contact Ids. Make sure to use these identifiers in your dataset contact references 
+[geoflow][INFO] Successfuly fetched 21 contacts! 
+[geoflow][INFO] Successfuly loaded 21 contacts! 
+[geoflow][INFO] Loading metadata entities... 
+[geoflow][INFO] Loading metadata entities from '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_entities/entities_metadata_only.xlsx' [with 'excel' handler]... 
+[geoflow][INFO] Try to use embedded entities handler 
+[geoflow][INFO] Execute handler to load entities... 
+-/                                                                                                          /                                                                                                          -                                                                                                          [geoflow][INFO] Validating entities 
+[geoflow][INFO] Validation issues --> 
+   row        col    type
+1    1 Identifier WARNING
+2    1    Subject WARNING
+3    1       Date WARNING
+4    1       Type WARNING
+5    2 Identifier WARNING
+6    2    Subject WARNING
+7    2       Date WARNING
+8    2       Type WARNING
+9    3 Identifier WARNING
+10   3    Subject WARNING
+11   3       Date WARNING
+12   3       Type WARNING
+13   4 Identifier WARNING
+14   4    Subject WARNING
+15   4       Date WARNING
+16   4       Type WARNING
+17   5 Identifier WARNING
+18   5    Subject WARNING
+19   5       Date WARNING
+20   5       Type WARNING
+21   6 Identifier WARNING
+22   6    Subject WARNING
+23   6       Date WARNING
+24   6       Type WARNING
+25   7 Identifier WARNING
+26   7    Subject WARNING
+27   7       Date WARNING
+28   7       Type WARNING
+29   8 Identifier WARNING
+30   8    Subject WARNING
+31   8       Date WARNING
+32   8       Type WARNING
+33   9 Identifier WARNING
+34   9    Subject WARNING
+35   9       Date WARNING
+36   9       Type WARNING
+37  10 Identifier WARNING
+38  10    Subject WARNING
+39  10       Date WARNING
+40  10       Type WARNING
+41  11 Identifier WARNING
+42  11    Subject WARNING
+43  11       Date WARNING
+44  11       Type WARNING
+45  12 Identifier WARNING
+46  12    Subject WARNING
+47  12       Date WARNING
+48  12       Type WARNING
+49  13 Identifier WARNING
+50  13    Subject WARNING
+51  13       Date WARNING
+52  13       Type WARNING
+53  14 Identifier WARNING
+54  14    Subject WARNING
+55  14       Date WARNING
+56  14       Type WARNING
+57  15 Identifier WARNING
+58  15    Subject WARNING
+59  15       Date WARNING
+60  15       Type WARNING
+61  16 Identifier WARNING
+62  16    Subject WARNING
+63  16       Date WARNING
+64  16       Type WARNING
+65  17 Identifier WARNING
+66  17    Subject WARNING
+67  17       Date WARNING
+68  17       Type WARNING
+69  18 Identifier WARNING
+70  18    Subject WARNING
+71  18       Date WARNING
+72  18       Type WARNING
+73  19 Identifier WARNING
+74  19    Subject WARNING
+75  19       Date WARNING
+76  19       Type WARNING
+                                                                               message
+1                                     Key is omitted, default key 'id' will be applied
+2                       Keyword topic's 'topic' is not a recognized ISO keyword topic.
+3  Creation date is missing and will be automaticaly completed at present day and hour
+4                                Key is omitted, default key 'generic' will be applied
+5                                     Key is omitted, default key 'id' will be applied
+6                       Keyword topic's 'topic' is not a recognized ISO keyword topic.
+7  Creation date is missing and will be automaticaly completed at present day and hour
+8                                Key is omitted, default key 'generic' will be applied
+9                                     Key is omitted, default key 'id' will be applied
+10                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+11 Creation date is missing and will be automaticaly completed at present day and hour
+12                               Key is omitted, default key 'generic' will be applied
+13                                    Key is omitted, default key 'id' will be applied
+14                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+15 Creation date is missing and will be automaticaly completed at present day and hour
+16                               Key is omitted, default key 'generic' will be applied
+17                                    Key is omitted, default key 'id' will be applied
+18                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+19 Creation date is missing and will be automaticaly completed at present day and hour
+20                               Key is omitted, default key 'generic' will be applied
+21                                    Key is omitted, default key 'id' will be applied
+22                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+23 Creation date is missing and will be automaticaly completed at present day and hour
+24                               Key is omitted, default key 'generic' will be applied
+25                                    Key is omitted, default key 'id' will be applied
+26                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+27 Creation date is missing and will be automaticaly completed at present day and hour
+28                               Key is omitted, default key 'generic' will be applied
+29                                    Key is omitted, default key 'id' will be applied
+30                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+31 Creation date is missing and will be automaticaly completed at present day and hour
+32                               Key is omitted, default key 'generic' will be applied
+33                                    Key is omitted, default key 'id' will be applied
+34                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+35 Creation date is missing and will be automaticaly completed at present day and hour
+36                               Key is omitted, default key 'generic' will be applied
+37                                    Key is omitted, default key 'id' will be applied
+38                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+39 Creation date is missing and will be automaticaly completed at present day and hour
+40                               Key is omitted, default key 'generic' will be applied
+41                                    Key is omitted, default key 'id' will be applied
+42                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+43 Creation date is missing and will be automaticaly completed at present day and hour
+44                               Key is omitted, default key 'generic' will be applied
+45                                    Key is omitted, default key 'id' will be applied
+46                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+47 Creation date is missing and will be automaticaly completed at present day and hour
+48                               Key is omitted, default key 'generic' will be applied
+49                                    Key is omitted, default key 'id' will be applied
+50                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+51 Creation date is missing and will be automaticaly completed at present day and hour
+52                               Key is omitted, default key 'generic' will be applied
+53                                    Key is omitted, default key 'id' will be applied
+54                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+55 Creation date is missing and will be automaticaly completed at present day and hour
+56                               Key is omitted, default key 'generic' will be applied
+57                                    Key is omitted, default key 'id' will be applied
+58                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+59 Creation date is missing and will be automaticaly completed at present day and hour
+60                               Key is omitted, default key 'generic' will be applied
+61                                    Key is omitted, default key 'id' will be applied
+62                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+63 Creation date is missing and will be automaticaly completed at present day and hour
+64                               Key is omitted, default key 'generic' will be applied
+65                                    Key is omitted, default key 'id' will be applied
+66                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+67 Creation date is missing and will be automaticaly completed at present day and hour
+68                               Key is omitted, default key 'generic' will be applied
+69                                    Key is omitted, default key 'id' will be applied
+70                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+71 Creation date is missing and will be automaticaly completed at present day and hour
+72                               Key is omitted, default key 'generic' will be applied
+73                                    Key is omitted, default key 'id' will be applied
+74                      Keyword topic's 'topic' is not a recognized ISO keyword topic.
+75 Creation date is missing and will be automaticaly completed at present day and hour
+76                               Key is omitted, default key 'generic' will be applied
+[geoflow][INFO] Parsing 19 entities from tabular source 
+[geoflow][INFO] Parsing entity 1 
+[geoflow][INFO] Parsing entity 2 
+[geoflow][INFO] Parsing entity 3 
+[geoflow][INFO] Parsing entity 4 
+[geoflow][INFO] Parsing entity 5 
+[geoflow][INFO] Parsing entity 6 
+[geoflow][INFO] Parsing entity 7 
+[geoflow][INFO] Parsing entity 8 
+[geoflow][INFO] Parsing entity 9 
+[geoflow][INFO] Parsing entity 10 
+[geoflow][INFO] Parsing entity 11 
+[geoflow][INFO] Parsing entity 12 
+[geoflow][INFO] Parsing entity 13 
+[geoflow][INFO] Parsing entity 14 
+[geoflow][INFO] Parsing entity 15 
+[geoflow][INFO] Parsing entity 16 
+[geoflow][INFO] Parsing entity 17 
+[geoflow][INFO] Parsing entity 18 
+[geoflow][INFO] Parsing entity 19 
+[geoflow][INFO] Successfuly fetched 19 entities! 
+[geoflow][INFO] Enrich metadata entities from directory of contacts 
+[geoflow][INFO] Successfuly loaded 19 entities! 
+[geoflow][INFO] Check package dependencies for action 'geometa-create-iso-19115' 
+[geoflow][INFO] The following packages have been imported for action 'geometa-create-iso-19115': 
+  package installed version
+1 geometa      TRUE  0.10.1
+2   ows4R      TRUE     0.5
+[geoflow][INFO] Check package dependencies for action 'geonapi-publish-iso-19139' 
+[geoflow][INFO] The following packages have been imported for action 'geonapi-publish-iso-19139': 
+  package installed version
+1 geometa      TRUE  0.10.1
+2 geonapi      TRUE   0.8.1
+====================================================================================================
+Workflow Execution
+====================================================================================================
+[geoflow][INFO] Executing workflow job... 
+----------------------------------------------------------------------------------------------------
+[geoflow][INFO] Executing software actions 'onstart' ... 
+----------------------------------------------------------------------------------------------------
+[geoflow][INFO] Executing entity actions ... 
+[geoflow][INFO] Workflow mode: entity 
+[geoflow][INFO] Workflow with 2 actions 
+[geoflow][INFO] Action 1: geometa-create-iso-19115 
+[geoflow][INFO] Action 2: geonapi-publish-iso-19139 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_odisse' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_odisse/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_odisse/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_odisse 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_catalogue_odisse 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_catalogue_odisse' ... 2.63157894736842 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_catalogue_odisse 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 3.10PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 06:59
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 06:59
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_catalogue_odisse 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 06:59
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_catalogue_odisse! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_catalogue_odisse' ... 5.26315789473684 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_atmoccitanie' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_atmoccitanie/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_atmoccitanie/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_atmoccitanie 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_catalogue_atmoccitanie 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_catalogue_atmoccitanie' ... 7.89473684210526 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_catalogue_atmoccitanie 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 1.70PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 06:59
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 06:59
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_catalogue_atmoccitanie 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 06:59
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_catalogue_atmoccitanie! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_catalogue_atmoccitanie' ... 10.5263157894737 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_ird' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_ird/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_ird/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_ird 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_catalogue_ird 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_catalogue_ird' ... 13.1578947368421 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_catalogue_ird 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 2.48PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 06:59
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 06:59
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_catalogue_ird 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 06:59
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_catalogue_ird! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_catalogue_ird' ... 15.7894736842105 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_3m' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_3m/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_3m/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_3m 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_catalogue_3m 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_catalogue_3m' ... 18.4210526315789 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_catalogue_3m 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 2.55PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_catalogue_3m 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_catalogue_3m! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_catalogue_3m' ... 21.0526315789474 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_rdg' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_rdg/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_rdg/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_rdg 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_catalogue_rdg 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_catalogue_rdg' ... 23.6842105263158 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_catalogue_rdg 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 2.54PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_catalogue_rdg 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_catalogue_rdg! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_catalogue_rdg' ... 26.3157894736842 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_oreme' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_oreme/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_oreme/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_oreme 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_catalogue_oreme 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_catalogue_oreme' ... 28.9473684210526 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_catalogue_oreme 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 5.03PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_catalogue_oreme 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_catalogue_oreme! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_catalogue_oreme' ... 31.5789473684211 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_copernicus' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_copernicus/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_copernicus/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_copernicus 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_catalogue_copernicus 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_catalogue_copernicus' ... 34.2105263157895 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_catalogue_copernicus 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 2.71PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_catalogue_copernicus 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_catalogue_copernicus! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_catalogue_copernicus' ... 36.8421052631579 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_ignf' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_ignf/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_ignf/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_ignf 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_catalogue_ignf 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_catalogue_ignf' ... 39.4736842105263 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_catalogue_ignf 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 3.36PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_catalogue_ignf 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_catalogue_ignf! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_catalogue_ignf' ... 42.1052631578947 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_progedo' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_progedo/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_progedo/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_progedo 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_catalogue_progedo 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_catalogue_progedo' ... 44.7368421052631 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_catalogue_progedo 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 4.22PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_catalogue_progedo 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_catalogue_progedo! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_catalogue_progedo' ... 47.3684210526316 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_pictooccitanie' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_pictooccitanie/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_pictooccitanie/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_pictooccitanie 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_catalogue_pictooccitanie 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_catalogue_pictooccitanie' ... 50 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_catalogue_pictooccitanie 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 2.43PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_catalogue_pictooccitanie 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_catalogue_pictooccitanie! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_catalogue_pictooccitanie' ... 52.6315789473684 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_dataherault' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_dataherault/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_dataherault/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_dataherault 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_catalogue_dataherault 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_catalogue_dataherault' ... 55.2631578947368 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_catalogue_dataherault 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 4.46PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_catalogue_dataherault 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_catalogue_dataherault! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_catalogue_dataherault' ... 57.8947368421052 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_edol' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_edol/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_edol/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_edol 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_catalogue_edol 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_catalogue_edol' ... 60.5263157894736 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_catalogue_edol 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 1.37PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_catalogue_edol 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:00
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_catalogue_edol! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_catalogue_edol' ... 63.1578947368421 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_gbif' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_gbif/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_gbif/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_catalogue_gbif 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_catalogue_gbif 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_catalogue_gbif' ... 65.7894736842105 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_catalogue_gbif 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 2.92PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_catalogue_gbif 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_catalogue_gbif! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_catalogue_gbif' ... 68.4210526315789 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_software_arbocarto' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_software_arbocarto/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_software_arbocarto/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_software_arbocarto 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_software_arbocarto 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_software_arbocarto' ... 71.0526315789473 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_software_arbocarto 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 3.09PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_software_arbocarto 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_software_arbocarto! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_software_arbocarto' ... 73.6842105263158 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_softaware_sustainlight' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_softaware_sustainlight/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_softaware_sustainlight/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_softaware_sustainlight 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_softaware_sustainlight 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_softaware_sustainlight' ... 76.3157894736842 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_softaware_sustainlight 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 2.76PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_softaware_sustainlight 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_softaware_sustainlight! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_softaware_sustainlight' ... 78.9473684210526 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-4' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-4/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-4/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-4 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_dataset_datanat-4 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_dataset_datanat-4' ... 81.578947368421 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_dataset_datanat-4 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 4.51PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_dataset_datanat-4 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_dataset_datanat-4! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_dataset_datanat-4' ... 84.2105263157895 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-1' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-1/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-1/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-1 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_dataset_datanat-1 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_dataset_datanat-1' ... 86.8421052631579 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_dataset_datanat-1 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 23.74TB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_dataset_datanat-1 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_dataset_datanat-1! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_dataset_datanat-1' ... 89.4736842105263 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-2' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-2/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-2/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-2 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_dataset_datanat-2 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_dataset_datanat-2' ... 92.1052631578947 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_dataset_datanat-2 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 2.53PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_dataset_datanat-2 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_dataset_datanat-2! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_dataset_datanat-2' ... 94.7368421052632 % 
+[geoflow][INFO] Create entity job dir at '/home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-3' 
+[geoflow][INFO] Creating 'data' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-3/data 
+[geoflow][INFO] Creating 'metadata' directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-3/metadata 
+[geoflow][INFO] Entity working directory: /home/ptaconet/IDG_OMEES/geomees/integration_donnees_omees/geoflow_logs/jobs/20261016085919/entities/omees_dataset_datanat-3 
+[geoflow][INFO] Executing Action 1: geometa-create-iso-19115 - for entity omees_dataset_datanat-3 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geometa-create-iso-19115' of ENTITY 'omees_dataset_datanat-3' ... 97.3684210526316 % 
+[geoflow][INFO] Executing Action 2: geonapi-publish-iso-19139 - for entity omees_dataset_datanat-3 
+indexed 0B in  0s, 0B/sindexed 1.00TB in  0s, 1.80PB/s                                                                                                          [geonapi][INFO] Getting user groups... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/groups]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 14.6 kB
+
+[geonapi][INFO] Successfully fetched user groups! 
+[geonapi][INFO] Getting tags (categories)... 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/tags]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 7.48 kB
+
+[geonapi][INFO] Successfully fetched tags (categories)! 
+[geonapi][INFO] Uploading metadata ... 
+[geometa][INFO] Object 'ISOMetadata' is VALID according to ISO 19139 XML schemas! 
+
+[geonapi][INFO] Successfully uploaded metadata! 
+[geonapi][INFO] Setting privileges (OpenAPI) for metadata id = omees_dataset_datanat-3 
+Response [https://geodata.inrae.fr/geonetwork/srv/api/operations]
+  Date: 2026-10-16 07:01
+  Status: 200
+  Content-Type: application/json
+  Size: 2.3 kB
+
+structure(list(name = c("view", "download", "editing", "notify", 
+"dynamic", "featured"), id = c(0L, 1L, 2L, 3L, 5L, 6L), label = structure(list(
+    swe = c("Publicera", "Ladda ned", "Redigera", "Avisera", 
+    "Interaktiv karta", "Urval"), dut = c("Publiceren", "Download", 
+    "Bewerken", "Informeren", "Interactieve Kaart", "Uitgelicht"
+    ), spa = c("Publicar", "Descargar", "Editar", "Notificar", 
+    "Mapa interactivo", "Featured"), chi = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), fin = c("Publish", 
+    "Download", "Editing", "Notify", "Interactive Map", "Featured"
+    ), pol = c("Publikacja", "Pobieranie", "Edycja", "Powiadamianie", 
+    "Mapy interaktywne", "Wyróżnione"), nor = c("Publisér", 
+    "Nedlasting", "Oppdatering", "Varsle", "Interaktivt kart", 
+    "Aktuelt"), tur = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), rus = c("Просмотр", 
+    "Загрузка", "Editing", "Уведомление", 
+    "Интерактивная карта", "Предлагаемая карта"
+    ), ara = c("Publish", "Download", "Editing", "Notify", "Interactive Map", 
+    "Featured"), por = c("Publicar", "Download", "Editar", "Notificar", 
+    "Mapa Interactivo", "Featured"), vie = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured"), ger = c("Veröffentlichen", 
+    "Download", "Editieren", "Benachrichtigen", "Interaktive Karte", 
+    "Featured"), cat = c("Publish", "Download", "Editing", "Notify", 
+    "Interactive Map", "Featured"), ita = c("Pubblica", "Scarica", 
+    "Modifica", "Notifica", "Mappa interattiva", "In rilievo"
+    ), slo = c("Publish [SK]", "Download [SK]", "Editing [SK]", 
+    "Notify [SK]", "Interactive Map [SK]", "Featured [SK]"), 
+    fre = c("Consulter", "Télécharger", "Éditer", "Notifier", 
+    "Visualiser", "Epingler"), eng = c("Publish", "Download", 
+    "Editing", "Notify", "Interactive Map", "Featured")), class = "data.frame", row.names = c(NA, 
+6L))), class = "data.frame", row.names = c(NA, 6L))
+      name id        label.swe          label.dut        label.spa       label.chi       label.fin
+1     view  0        Publicera         Publiceren         Publicar         Publish         Publish
+2 download  1        Ladda ned           Download        Descargar        Download        Download
+3  editing  2         Redigera           Bewerken           Editar         Editing         Editing
+4   notify  3          Avisera         Informeren        Notificar          Notify          Notify
+5  dynamic  5 Interaktiv karta Interactieve Kaart Mapa interactivo Interactive Map Interactive Map
+6 featured  6            Urval         Uitgelicht         Featured        Featured        Featured
+          label.pol        label.nor       label.tur           label.rus       label.ara        label.por
+1        Publikacja         Publisér         Publish            Просмотр         Publish         Publicar
+2        Pobieranie       Nedlasting        Download            Загрузка        Download         Download
+3            Edycja      Oppdatering         Editing             Editing         Editing           Editar
+4     Powiadamianie           Varsle          Notify         Уведомление          Notify        Notificar
+5 Mapy interaktywne Interaktivt kart Interactive Map Интерактивная карта Interactive Map Mapa Interactivo
+6        Wyróżnione          Aktuelt        Featured  Предлагаемая карта        Featured         Featured
+        label.vie         label.ger       label.cat         label.ita            label.slo   label.fre
+1         Publish   Veröffentlichen         Publish          Pubblica         Publish [SK]   Consulter
+2        Download          Download        Download           Scarica        Download [SK] Télécharger
+3         Editing         Editieren         Editing          Modifica         Editing [SK]      Éditer
+4          Notify   Benachrichtigen          Notify          Notifica          Notify [SK]    Notifier
+5 Interactive Map Interaktive Karte Interactive Map Mappa interattiva Interactive Map [SK]  Visualiser
+6        Featured          Featured        Featured        In rilievo        Featured [SK]    Epingler
+        label.eng
+1         Publish
+2        Download
+3         Editing
+4          Notify
+5 Interactive Map
+6        Featured
+
+[geonapi][INFO] Successfully set privileges for metadata ID = omees_dataset_datanat-3! 
+[geoflow][INFO] WORKFLOW PROGRESS : ACTION 'geonapi-publish-iso-19139' of ENTITY 'omees_dataset_datanat-3' ... 100 % 
+wrote 1.00TB in  0s, 52.43PB/s                                                                                                          wrote 1.00TB in  0s, 139.81PB/s                                                                                                          wrote 1.00TB in  0s, 110.38PB/s                                                                                                          ----------------------------------------------------------------------------------------------------
+[geoflow][INFO] Executing software actions 'onend' ... 
+[geoflow][INFO] Workflow successfully executed ... 
+[geoflow][INFO] Reset Geonetwork API manager 
