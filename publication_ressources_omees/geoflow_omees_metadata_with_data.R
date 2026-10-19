@@ -65,5 +65,5 @@ config_file <- update_geoflow_config(
 
 
 
-config <- initWorkflow("/home/ptaconet/geomees/publication_ressources_omees/geoflow/geoflow_config_files/config_geomees_metadata_with_data.json", dir = "/home/ptaconet/geomees/publication_ressources_omees/geoflow_logs")
-executeWorkflow("/home/ptaconet/geomees/publication_ressources_omees/geoflow/geoflow_config_files/config_geomees_metadata_with_data.json", dir = "/home/ptaconet/geomees/publication_ressources_omees/geoflow_logs")
+config <- initWorkflow("/home/ptaconet/geomees/publication_ressources_omees/geoflow_config_files/config_geomees_metadata_with_data.json", dir = "/home/ptaconet/geomees/publication_ressources_omees/geoflow_logs")
+executeWorkflow("/home/ptaconet/geomees/publication_ressources_omees/geoflow_config_files/config_geomees_metadata_with_data.json", dir = "/home/ptaconet/geomees/publication_ressources_omees/geoflow_logs")

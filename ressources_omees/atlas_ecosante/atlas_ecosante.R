@@ -261,7 +261,7 @@ df_projets <- df_projets %>%
   mutate(adresse_geocodage = str_extract(adresse, "(?i)(rue|place|chemin|avenue|boulevard|route|baillarguet|bd|av)\\s+.*"))
 
 
-df_acteurs <- read.csv("donnees_omees/atlas_ecosante/acteurs/acteurs_avec_adresse_propre.csv", sep =",")
+df_acteurs <- read.csv("ressources_omees/atlas_ecosante/acteurs/acteurs_avec_adresse_propre.csv", sep =",")
 
 for(i in 1:nrow(df_acteurs)){
 

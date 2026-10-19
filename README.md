@@ -247,9 +247,7 @@ Les procédures ci-dessus reprennent les quatre cas d’usage du support du comi
 | Élément | Adaptation nécessaire |
 | --- | --- |
 | Chemins absolus | Remplacer les références à `/home/ptaconet/geomees/` dans les scripts et JSON. |
-| Workflow geoflow avec données | Les appels finaux à `initWorkflow()` et `executeWorkflow()` pointent vers `publication_ressources_omees/geoflow/geoflow_config_files/`. Retirer le niveau `geoflow/` supplémentaire pour viser le dossier présent dans le dépôt. |
 | JSON « avec données » | Le fichier examiné comporte des valeurs non conformes à la syntaxe JSON. Le corriger avant lancement ; `jsonlite::fromJSON()` doit pouvoir le lire avant même l’injection des paramètres de connexion. |
-| Préparation des acteurs | Une lecture utilise encore `donnees_omees/atlas_ecosante/...` au lieu de `ressources_omees/atlas_ecosante/...`. Contrôler également les coordonnées, les corrections manuelles et les sites web. |
 | Fiches individuelles des projets | Adapter les chemins hérités de l’ancien dépôt et initialiser les objets/paquets nécessaires à la publication. |
 | Essai GBIF | `meta_harvest_gbif.R` est un essai séparé, non appelé par le workflow principal ; il dépend de fichiers locaux, dont une feuille XSLT absente du dépôt. |
 
